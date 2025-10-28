@@ -1,6 +1,6 @@
 export enum AlgorithmEnum {
 
-    CEASAR = "ceasar",
+    CAESAR = "caesar",
     VIGENERE = "vigenere",
     DES = "des",
     RSA = "rsa",

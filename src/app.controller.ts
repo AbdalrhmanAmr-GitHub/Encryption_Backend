@@ -11,17 +11,6 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Post('/encrypt')
-  async encrypt(
-    @Body() body: { text: string; algorithm: AlgorithmEnum; key?: string }
-  ) {
-    const { text, algorithm, key } = body;
-
-    if (!text || !algorithm) {
-      throw new HttpException('Text and algorithm are required', 400);
-    }
-
-    return this.appService.getEncryptedText(text, algorithm, key);
-  }
+  
 }
 
