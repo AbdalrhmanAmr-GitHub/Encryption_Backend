@@ -1,7 +1,5 @@
 import { HttpException, Injectable } from '@nestjs/common';
-import { AlgorithmEnum } from './algorithm-enum';
-import { caesarDecrypt, caesarEncrypt } from './algorithms';
-
+import { caesarDecrypt, caesarEncrypt} from './algorithms';
 @Injectable()
 export class AlgorithmsService {
 

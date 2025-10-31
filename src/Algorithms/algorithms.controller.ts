@@ -1,5 +1,4 @@
 import { Body, Controller, HttpException, Post } from '@nestjs/common';
-import { AlgorithmEnum } from './algorithm-enum';
 import { AlgorithmsService } from './algorithms.service';
 
 @Controller('algorithms')
